@@ -27,9 +27,9 @@
         $b = "$a World";
         $c = '$a World';
 
-        print_r(<p> . $a);
-        print_r(<p> . $b);
-        print_r(<p> . $c);
+        // print_r(<p> . $a);
+        // print_r(<p> . $b);
+        // print_r(<p> . $c);
 
     ?>
 </body>
