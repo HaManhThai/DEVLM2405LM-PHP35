@@ -5,6 +5,9 @@
     $matKhau = $_POST["txtMatKhau"];
 
     echo "<h1> Welcome to, $taiKhoan; mật khẩu của bạn: $matKhau";
+    
+
+    echo '<hr>';
 ?>
 
 <?php
