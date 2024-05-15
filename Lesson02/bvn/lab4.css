@@ -1,0 +1,31 @@
+#main {
+    margin: 0 auto;
+    height: 35px;
+    width: 800px;
+    background: #ccc;
+
+}
+
+#main ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#main ul li {
+    float: left;
+    border-right: solid 1px #fff;
+}
+
+#main ul li a {
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+#main ul li a:hover,
+.selected {
+    background: #792b90;
+    color: #fff !important;
+}
