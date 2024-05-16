@@ -58,7 +58,8 @@
                 case 12:
                     $m1 = "Tháng mười hai";
                     break;
-                
+                    default:
+                    $m1 = "Tháng bạn nhập không hợp lệ, vui lòng nhập lại";
             }
         }
     ?>

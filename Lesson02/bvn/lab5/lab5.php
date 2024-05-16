@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bài 4</title>
+    <title>bài 5</title>
 
     <style>
         #main {
@@ -71,30 +71,29 @@
 </head>
 
 <body>
-   
-    <?php
-        if( isset($_GET["view1"]) ){
-            $selected1 = 'class="selected1"';
-        }elseif(isset($_GET["view2"])){
-            $selected2 = 'class="selected2"';
-        }elseif(isset($_GET["view3"])){
-            $selected3 = 'class="selected3"';
-        }elseif(isset($_GET["view4"])){
-            $selected4 = 'class="selected4"';
-        }else{
-            $selected5 = 'class="selected5"';
-        }
-    ?>    
 
     <nav id="main">
         <ul>
-            <li class="li" name="" ><a <?php if(isset($_GET["view1"])) echo $selected1 ?> href="lab4.php?view1=''" >Trang chủ</a></li>
-            <li class="li" name=""><a <?php if(isset($_GET["view2"])) echo $selected2  ?>  href="lab4.php?view2=''">Giới thiệu</a></li>
-            <li class="li" name=""><a <?php if(isset($_GET["view3"])) echo $selected3  ?>  href="lab4.php?view3=''">Sản phẩm</a></li>
-            <li class="li" name=""><a <?php if(isset($_GET["view4"])) echo $selected4  ?>  href="lab4.php?view4=''">Dịch vụ</a></li>
-            <li class="li1" name=""><a <?php if(isset($_GET["view5"])) echo $selected5 ?> href="lab4.php?view5=''">Liên hệ</a></li>
+            <li class="li" name=""><a  >Trang chủ</a></li>
+            <li class="li" name=""><a  >Giới thiệu</a></li>
+            <li class="li" name=""><a >Sản phẩm</a></li>
+            <li class="li" name=""><a >Dịch vụ</a></li>
+            <li class="li" name=""><a  >Liên hệ</a></li>
+            <li class="li1" name=""><a  href="lab5_VI.php?view6=''">VI</a></li>
+           
         </ul>
-    </nav>              
+    </nav>     
+
+    <nav id="main">
+        <ul>
+            <li class="li" name="" ><a  >Home</a></li>
+            <li class="li" name=""><a >About</a></li>
+            <li class="li" name=""><a >Products</a></li>
+            <li class="li" name=""><a>Services</a></li>
+            <li class="li" name=""><a>Contact</a></li>
+            <li class="li1" name=""><a href="lab5_EN.php?view6_1=''">EN</a></li>
+        </ul>
+    </nav>    
 </body>
 
 </html>
