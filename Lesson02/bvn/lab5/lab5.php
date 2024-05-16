@@ -79,21 +79,13 @@
             <li class="li" name=""><a >Sản phẩm</a></li>
             <li class="li" name=""><a >Dịch vụ</a></li>
             <li class="li" name=""><a  >Liên hệ</a></li>
-            <li class="li1" name=""><a  href="lab5_VI.php?view6=''">VI</a></li>
+            <li class="li" name=""><a  href="lab5_VI.php?view6=''">VI</a></li>
+            <li class="li1" name=""><a  href="lab5_EN.php?view6_1=''">EN</a></li>
+
            
         </ul>
     </nav>     
 
-    <nav id="main">
-        <ul>
-            <li class="li" name="" ><a  >Home</a></li>
-            <li class="li" name=""><a >About</a></li>
-            <li class="li" name=""><a >Products</a></li>
-            <li class="li" name=""><a>Services</a></li>
-            <li class="li" name=""><a>Contact</a></li>
-            <li class="li1" name=""><a href="lab5_EN.php?view6_1=''">EN</a></li>
-        </ul>
-    </nav>    
 </body>
 
 </html>
