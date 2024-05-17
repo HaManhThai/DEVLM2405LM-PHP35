@@ -39,34 +39,12 @@
             display: block;
         }
 
-        #main ul li a:hover,
+        #main ul .li2:hover,
         .selected{
             background: #792b90;
             color: #fff !important;
         }
         
-        .selected1 {
-            background: #792b90;
-            color: #fff !important;
-        }
-        .selected2 {
-            background: #792b90;
-            color: #fff !important;
-        }
-        .selected3 {
-            background: #792b90;
-            color: #fff !important;
-        }
-        .selected4 {
-            background: #792b90;
-            color: #fff !important;
-        }
-        .selected5 {
-            background: #792b90;
-            color: #fff !important;
-        }
-       
-
     </style>
 </head>
 
@@ -79,8 +57,8 @@
             <li class="li" name=""><a >Sản phẩm</a></li>
             <li class="li" name=""><a >Dịch vụ</a></li>
             <li class="li" name=""><a  >Liên hệ</a></li>
-            <li class="li" name=""><a  href="lab5_VI.php?view6=''">VI</a></li>
-            <li class="li1" name=""><a  href="lab5_EN.php?view6_1=''">EN</a></li>
+            <li class="li li2" name=""><a  href="lab5_VI.php?view6=''">VI</a></li>
+            <li class="li1 li2" name=""><a  href="lab5_EN.php?view6_1=''">EN</a></li>
 
            
         </ul>
