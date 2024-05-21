@@ -91,8 +91,8 @@
             <li class="li" name="" ><a <?php if(isset($_GET["view1"])) echo $selected1 ?> href="lab4.php?view1=''" >Trang chủ</a></li>
             <li class="li" name=""><a <?php if(isset($_GET["view2"])) echo $selected2  ?>  href="lab4.php?view2=''">Giới thiệu</a></li>
             <li class="li" name=""><a <?php if(isset($_GET["view3"])) echo $selected3  ?>  href="lab4.php?view3=''">Sản phẩm</a></li>
-            <li class="li" name=""><a <?php if(isset($_GET["view4"])) echo $selected4  ?>  href="lab4.php?view4=''">Dịch vụ</a></li>
-            <li class="li1" name=""><a <?php if(isset($_GET["view5"])) echo $selected5 ?> href="lab4.php?view5=''">Liên hệ</a></li>
+            <li class="li" name=""><a <?php if(isset($_GET["view4:"])) echo $selected4  ?>  href="lab4.php?view4=''">Dịch vụ</a></li>
+            <li class="li1" name=""><a <?php if(isset($_GET["view5_r"])) echo $selected5 ?> href="lab4.php?view5=''">Liên hệ</a></li>
         </ul>
     </nav>              
 </body>
