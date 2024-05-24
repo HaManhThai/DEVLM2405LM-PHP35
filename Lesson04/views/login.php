@@ -15,7 +15,8 @@
     }
     $_SESSION["login"]["email"] = $email; 
     $_SESSION["login"]["pass"] = $pass; 
-    header("Location: index.php?view=home");
+    if($email !== "" && $pass !== "") header("Location: index.php?view=home");
+    else  header("Location: index.php?view=login");
   }
 ?>
 
