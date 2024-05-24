@@ -1,17 +1,23 @@
 
+
 <?php
   ob_start();
+  $arrData = ["emailHopLe" => "hmt@gmail.com", "passHopLe" => "123123"];
   if(isset($_POST["signin"])){
     $email = $_POST["email"];
     $pass = $_POST["pass"];
+
     if(isset($_POST["remember"])){
       setcookie("email",$email,time()+3600*10);
       setcookie("pass",$pass,time()+3600*10);
      
     }
-    $_SESSION["login"]["email"] = $email; 
-    $_SESSION["login"]["pass"] = $pass; 
-    if($email !== "" && $pass !== "") header("Location: index.php?view=home");
+    if($email == $arrData["emailHopLe"] && $pass == $arrData["passHopLe"]){
+      $_SESSION["login"]["email"] = $arrData["emailHopLe"]; 
+      $_SESSION["login"]["pass"] = $arrData["passHopLe"]; 
+    }
+    
+    if($email == $arrData["emailHopLe"]  && $pass == $arrData["passHopLe"]) header("Location: index.php?view=home");
     else  header("Location: index.php?view=login");
   }
 ?>
