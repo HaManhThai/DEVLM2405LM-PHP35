@@ -30,31 +30,12 @@
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
 </head>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <body class="hold-transition sidebar-mini layout-fixed">
-
         <div class="wrapper">
             <?php
                 include_once("views/header.php");
             ?>
-
-
         </div>
-
-
 
         <!-- ... -->
 
@@ -66,20 +47,15 @@
                         include("views/login.php");
                     }
                 ?>
-           
+            
         </section>
             
-        
 
         <footer class="main-footer"> 
             <?php
                 include_once("views/footer.php");
             ?>   
         </footer>
-
-
-
-
 
         <!-- jQuery -->
         <script src="plugins/jquery/jquery.min.js"></script>
