@@ -6,14 +6,14 @@
 <?php
   ob_start();
   if(isset($_POST["signin"])){
-    $name = $_POST["name"];
+    $email = $_POST["email"];
     $pass = $_POST["pass"];
     if(isset($_POST["remember"])){
-      setcookie("name",$name,time()+3600*10);
+      setcookie("email",$email,time()+3600*10);
       setcookie("pass",$pass,time()+3600*10);
      
     }
-    $_SESSION["login"]["name"] = $name; 
+    $_SESSION["login"]["email"] = $email; 
     $_SESSION["login"]["pass"] = $pass; 
     header("Location: index.php?view=home");
   }
@@ -31,7 +31,7 @@
 
       <form action="" method="post" >
         <div class="input-group mb-3">
-          <input type="email" name="name" class="form-control" placeholder="Email">
+          <input type="email" name="email" class="form-control" placeholder="Email">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
