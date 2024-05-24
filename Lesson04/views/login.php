@@ -15,19 +15,19 @@
     }
     $_SESSION["login"]["name"] = $name; 
     $_SESSION["login"]["pass"] = $pass; 
-    header("Location: index.php");
+    header("Location: index.php?view=home");
   }
 ?>
 
 
 <div class="login-box" >
   <div class="login-logo" >
-    <a href="../../index2.html"><b>Admin</b></a>
+    <a href="#"><b>Admin</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="card" >
     <div class="card-body login-card-body" >
-      <p class="login-box-msg">Sign in to start your session</p>
+      <h3 class="login-box-msg">Vui lòng đăng nhập để vào hệ thống</h3>
 
       <form action="" method="post" >
         <div class="input-group mb-3">

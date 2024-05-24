@@ -6,23 +6,76 @@
       </li> -->
 
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index.php" class="nav-link">Home</a>
+        <?php
+            if(isset($_SESSION["login"]["name"]) && isset($_SESSION["login"]["pass"])){
+        ?>        
+                <a href="index.php?view=home" class="nav-link">Home</a>
+        <?php
+            }else{               
+        ?>        
+                <a href="index.php?view=login" class="nav-link">Home</a>
+        <?php
+            }
+        ?>
+
+  
       </li>
 
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index.php?view=about" class="nav-link">About</a>
+        <?php
+            if(isset($_SESSION["login"]["name"]) && isset($_SESSION["login"]["pass"])){
+        ?>        
+                <a href="index.php?view=about" class="nav-link">About</a>
+        <?php
+            }else{
+        ?>        
+                <a href="index.php?view=login" class="nav-link">About</a>
+        <?php
+            }
+        ?>
+        
       </li>
 
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index.php?view=products" class="nav-link">Products</a>
+        <?php
+            if(isset($_SESSION["login"]["name"]) && isset($_SESSION["login"]["pass"])){
+        ?>        
+                <a href="index.php?view=products" class="nav-link">Products</a>
+        <?php
+            }else{
+        ?>        
+                <a href="index.php?view=login" class="nav-link">Products</a>
+        <?php
+            }
+        ?>
       </li>
 
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index.php?view=services" class="nav-link">Services</a>
+        <?php
+            if(isset($_SESSION["login"]["name"]) && isset($_SESSION["login"]["pass"])){
+        ?>        
+                <a href="index.php?view=services" class="nav-link">Services</a>
+        <?php
+            }else{
+        ?>        
+                <a href="index.php?view=login" class="nav-link">Services</a>
+        <?php
+            }
+        ?>
       </li>
 
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index.php?view=contact" class="nav-link">Contact</a>
+        <?php
+            if(isset($_SESSION["login"]["name"]) && isset($_SESSION["login"]["pass"])){
+        ?>        
+                <a href="index.php?view=contact" class="nav-link">Contact</a>
+        <?php
+            }else{
+        ?>        
+                <a href="index.php?view=login" class="nav-link">Contact</a>
+        <?php
+            }
+        ?>
       </li>
 
       <li class="nav-item d-none d-sm-inline-block">

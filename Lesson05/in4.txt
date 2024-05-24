@@ -1,0 +1,2 @@
+oop:class? đối tượng ??
+tính đa hình, tính kế thừa, tính đóng gói , tính trừu tượng???

@@ -60,10 +60,10 @@
 
         <section class="content">
                 <?php
-                    if(isset($_GET["view"])){
+                    if(isset($_GET["view"]) && isset($_SESSION["login"]["name"]) && isset($_SESSION["login"]["pass"])){
                         include("views/".$_GET['view'].".php");
                     }else{
-                        include("views/home.php");
+                        include("views/login.php");
                     }
                 ?>
            
