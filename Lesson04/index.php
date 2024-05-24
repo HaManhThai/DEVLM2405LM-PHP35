@@ -41,7 +41,7 @@
 
         <section class="content">
                 <?php
-                    if(isset($_GET["view"]) && isset($_SESSION["login"]["email"]) && isset($_SESSION["login"]["pass"])){
+                    if(isset($_GET["view"]) && isset($_SESSION["login"]["email"]) && $_SESSION["login"]["email"] !== "" && isset($_SESSION["login"]["pass"]) && $_SESSION["login"]["pass"] !== ""){
                         include("views/".$_GET['view'].".php");
                     }else{
                         include("views/login.php");
