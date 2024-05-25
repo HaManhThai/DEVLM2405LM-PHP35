@@ -18,7 +18,10 @@
     }
     
     if($email == $arrData["emailHopLe"]  && $pass == $arrData["passHopLe"]) header("Location: index.php?view=home");
-    else  header("Location: index.php?view=login");
+    else{
+      echo "<script> alert('Vui lòng nhập Email và mật khẩu hợp lệ'); </script>";
+      
+    }  
   }
 ?>
 
