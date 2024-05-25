@@ -1,5 +1,3 @@
-
-
 <?php
   ob_start();
   $arrData = ["emailHopLe" => "hmt@gmail.com", "passHopLe" => "123123"];
@@ -19,8 +17,7 @@
     
     if($email == $arrData["emailHopLe"]  && $pass == $arrData["passHopLe"]) header("Location: index.php?view=home");
     else{
-      echo "<script> alert('Vui lòng nhập Email và mật khẩu hợp lệ'); </script>";
-      
+      echo "<script> alert('Vui lòng nhập Email và mật khẩu mà bạn đã đăng ký (lấy trong file đính kèm có tên \"Lấy Email và mật khẩu ở đây để đăng nhập.txt\" nằm trên file index.php)'); </script>";
     }  
   }
 ?>
